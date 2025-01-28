@@ -1,7 +1,8 @@
 
 .my-details {
-    margin-top: 0;
-    margin: 2rem;
+    padding-top: 8rem;
+    margin-left: 7rem;
+    text-align: center;
   }
   .my-details .tagline {
     font-weight: 700;
@@ -26,12 +27,13 @@
     display: block;
   }
   .my-details p {
-    color: #b8b8b8;
+    color: #fff;
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
-    width: 96%;
-  }
+    margin-top: 20px; /* Adjust spacing from the headline */
+    width: 50%; /* Adjust width if needed */  }
+    
   .my-details button {
     color: #fff;
     font-weight: 700;
@@ -52,6 +54,10 @@
   }
   .my-details img {
     animation: updown 3s linear infinite;
+    margin-right: 140px; /* Optional: Adds space between image and text */
+    max-width: 100%; /* Prevents the image from stretching */
+    margin-top: -100px;
+  
   }
   @keyframes updown {
     0% {

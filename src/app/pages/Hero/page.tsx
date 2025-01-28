@@ -8,11 +8,15 @@ const Hero = () => {
   return (
     <Container>
       <div
-        className="bg-cover bg-center py-8 px-4"
-        style={{ backgroundImage: `url(${bannerImage.src})` }}
+        className="bg-fixed bg-center py-8 px-4"
+        // className="bg-cover bg-center py-8 px-4"
+        style={{
+          backgroundImage: `url(${bannerImage.src})`,
+          backgroundPosition: "center top 50px",
+        }}
       >
         <MyDetails />
-        <Technologies />``
+        <Technologies />
       </div>
     </Container>
   );

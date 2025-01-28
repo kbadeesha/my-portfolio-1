@@ -52,7 +52,7 @@ const MyDetails = () => {
     <section className="my-details" id="home">
       <Container>
         <Row className="align-items-center">
-          <Col xs={12} md={6} xl={5}>
+          <Col xs={12} md={6} xl={5} >
             <TrackVisibility>
               {({ isVisible }) => (
                 <div className="logoImage">
