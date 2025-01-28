@@ -55,12 +55,14 @@ const MyDetails = () => {
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
               {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__zoomIn" : ""
-                  }
-                >
-                  <img src={Header1.src} alt="Header Img" />
+                <div className="logoImage">
+                  <div
+                    className={
+                      isVisible ? " animate__animated animate__zoomIn " : ""
+                    }
+                  >
+                    <img src={Header1.src} alt="Header Img" />
+                  </div>
                 </div>
               )}
             </TrackVisibility>

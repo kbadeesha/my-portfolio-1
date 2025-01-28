@@ -5,7 +5,7 @@ import "../../styles/components/technologies.css";
 const Technologies = () => {
   return (
     <section className="tech" id="tech">
-      <div className="container">
+      <div className="container-tech">
         {" "}
         <div className="row">
           <div className="col-12">

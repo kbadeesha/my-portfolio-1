@@ -1,11 +1,7 @@
 
 .my-details {
     margin-top: 0;
-    padding: 260px 0 100px 0;
-    background-image: url("../../../../public/assets/img/banner-bg.png");
-    background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    margin: 2rem;
   }
   .my-details .tagline {
     font-weight: 700;
@@ -70,4 +66,8 @@
   }
   .txt-rotate > .wrap {
     border-right: 0.08em solid #666;
+  }
+
+ .logoImage{
+    float: inline-end;
   }

@@ -21,7 +21,9 @@ body {
   background-color: #121212;
   font-weight: 400;
   overflow-x: hidden;
-  position: relative;
+  position: relative; 
+
+
 }
 @media (min-width: 1700px) {
   main .container {

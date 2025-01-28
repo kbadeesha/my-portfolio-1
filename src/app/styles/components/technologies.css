@@ -1,5 +1,9 @@
 /* tech.css */
+.container-tech{
+    padding-top: 15rem;
+}
 .tech {
+    margin: 2rem 0;
     padding: 0 0 10em 0;
     position: relative;
   }
