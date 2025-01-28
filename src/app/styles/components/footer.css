@@ -1,7 +1,7 @@
 .footer {
     bottom: 0;
     padding: 10px 0;
-    background-image: url("../../../../public/assets/img/footer-bg.png");
+    background-color: #34353A;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
