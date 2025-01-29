@@ -8,7 +8,8 @@
     position: relative;
   }
   .tech-bx {
-    background: #151515;
+    background: #34353A;
+    /* background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(26,4,33,1) 48%, rgba(0,0,0,1) 100%); */
     border-radius: 64px;
     text-align: center;
     padding: 60px 50px;
