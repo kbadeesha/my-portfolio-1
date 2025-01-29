@@ -30,18 +30,18 @@ const NavBar = () => {
           <Image src={navIcon1} alt="LinkedIn Icon" className="navbar-social-icon"/>
         </a>
         <a
-          href="https://www.linkedin.com/in/adeesha-kristhorubaduge-579b46199/"
+          href="https://facebook.com/adeeshaxd/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image src={navIcon2} alt="LinkedIn Icon" className="navbar-social-icon"/>
+          <Image src={navIcon2} alt="Facebook Icon" className="navbar-social-icon"/>
         </a>
         <a
-          href="https://www.linkedin.com/in/adeesha-kristhorubaduge-579b46199/"
+          href="https://github.com/kbadeesha"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image src={navIcon3} alt="LinkedIn Icon" className="navbar-social-icon" style={{height:"33px" , width:"33px"}}/>
+          <Image src={navIcon3} alt="Git Icon" className="navbar-social-icon" style={{height:"33px" , width:"33px"}}/>
         </a>
       </div>
     </nav>

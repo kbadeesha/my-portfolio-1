@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+/************ Custom Font ************/
+@font-face {
+  font-family: Centra;
+  src: url("../../public/assets//font/CentraNo2-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: Centra;
+  src: url("../../public/assets/font/CentraNo2-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: Centra;
+  src: url("../../public/assets/font/CentraNo2-Book.ttf");
+  font-weight: 400;
+}
 
 :root {
   --background: #34353A;
@@ -18,7 +34,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Centra", sans-serif !important;
   background-color: #121212;
   font-weight: 400;
   overflow-x: hidden;

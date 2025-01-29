@@ -5,7 +5,7 @@ import html_logo from "../../../../public/assets/img/tech_Logo/html_logo.png";
 import js_logo from "../../../../public/assets/img/tech_Logo/js_logo.png";
 import sass_logo from "../../../../public/assets/img/tech_Logo/sass_logo.png";
 import nest_logo from "../../../../public/assets/img/tech_Logo/nest_logo.png";
-import nextJs_logo from "../../../../public/assets/img/tech_Logo/next_logo.png";
+import nextJs_logo from "../../../../public/assets/img/tech_Logo/nextJs3.png";
 import node_logo from "../../../../public/assets/img/tech_Logo/node_icon.png";
 import bootstrap_logo from "../../../../public/assets/img/tech_Logo/mui_logo.png";
 import mui_logo from "../../../../public/assets/img/tech_Logo/bootstrap_logo.png";
