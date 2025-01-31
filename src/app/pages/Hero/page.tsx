@@ -3,6 +3,8 @@ import Technologies from "@/app/components/Technologies/Technologies";
 import React from "react";
 import { Container } from "react-bootstrap";
 import bannerImage from "../../../../public/assets/img/banner-bg.png";
+import Experience from "@/app/components/Experience/Experience";
+import Projects from "@/app/components/Projects/Projects";
 
 const Hero = () => {
   return (
@@ -17,6 +19,8 @@ const Hero = () => {
       >
         <MyDetails />
         <Technologies />
+        <Experience />
+        <Projects />
       </div>
     </Container>
   );
