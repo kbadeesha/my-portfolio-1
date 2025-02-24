@@ -11,23 +11,24 @@ const MyDetails = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [index, setIndex] = useState(1);
   const toRotate = ["Web Developer", "Software Engineer", "Software Engineer"];
   const period = 2000;
 
   useEffect(() => {
-    const ticker = setInterval(() => {
+    let ticker = setInterval(() => {
       tick();
     }, delta);
 
     return () => {
       clearInterval(ticker);
     };
-  }, [delta]); // Add delta as a dependency
+  }, [text]);
 
   const tick = () => {
-    const i = loopNum % toRotate.length;
-    const fullText = toRotate[i];
-    const updatedText = isDeleting
+    let i = loopNum % toRotate.length;
+    let fullText = toRotate[i];
+    let updatedText = isDeleting
       ? fullText.substring(0, text.length - 1)
       : fullText.substring(0, text.length + 1);
 
@@ -39,11 +40,15 @@ const MyDetails = () => {
 
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
-      setLoopNum(loopNum + 1); // Adjusted loopNum increment logic
+      setIndex((prevIndex) => prevIndex - 1);
       setDelta(period);
     } else if (isDeleting && updatedText === "") {
       setIsDeleting(false);
+      setLoopNum(loopNum + 1);
+      setIndex(1);
       setDelta(500);
+    } else {
+      setIndex((prevIndex) => prevIndex + 1);
     }
   };
 
@@ -63,8 +68,8 @@ const MyDetails = () => {
                     <Image
                       src={Header1.src}
                       alt="Header Img"
-                      width={500} // Set the appropriate width
-                      height={500} // Set the appropriate height
+                      width={500}
+                      height={500}
                     />
                   </div>
                 </div>
@@ -82,10 +87,7 @@ const MyDetails = () => {
                   <span className="tagline">Welcome to my Universe</span>
                   <h1>
                     {`Hi! I'm Adeesha`} <br />
-                    <span
-                      className="txt-rotate"
-                      data-rotate='[ "Web Application Developer", "Front End Developer", "Front End Engineer","Web Applications Engineer" ]'
-                    >
+                    <span className="txt-rotate">
                       <span className="wrap">{text}</span>
                     </span>
                   </h1>
