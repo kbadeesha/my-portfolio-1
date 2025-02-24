@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 import Image from "next/image"; // Import Image component
 import "../../styles/components/navbar.css";
@@ -6,7 +5,7 @@ import logo from "../../../../public/assets/img/Logo.png";
 import navIcon1 from "../../../../public/assets/img/nav-icon1.svg";
 import navIcon2 from "../../../../public/assets/img/nav-icon2.svg";
 import navIcon3 from "../../../../public/assets/img/nav-icon7.svg";
-import { Col, Row } from "react-bootstrap";
+
 
 const NavBar = () => {
   return (

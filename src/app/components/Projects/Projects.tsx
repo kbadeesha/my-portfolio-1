@@ -11,14 +11,17 @@ const Projects = () => {
             <div className="proj-bx wow zoomIn">
               <h2>Projects</h2>
               <p>
-                Throughout my journey as a developer, I have gained projertise in
-                a diverse set of Projects that empower me to build scalable,
-                high-performance applications. From the front-end to the
-                back-end, I leverage modern tools and frameworks to craft
-                seamless user Projectss and robust infrastructures.
+                Throughout my career, I have worked on diverse projects that
+                showcase my ability to design, develop, and deploy high-quality
+                software solutions. Each project has allowed me to apply my
+                technical expertise, problem-solving skills, and creativity to
+                build functional and impactful applications. Whether it is a
+                dynamic web platform, an e-commerce solution, or a feature-rich
+                enterprise system, I strive to create seamless and scalable
+                experiences.
                 <br />
-                <br /> Below is a selection of the key Projects I’ve worked
-                with to bring projects to life.
+                <br /> Below are some of the key projects I have worked on,
+                highlighting my contributions and the technologies used.+
               </p>
               <TrackVisibility partialVisibility>
                 {({ isVisible }) => (

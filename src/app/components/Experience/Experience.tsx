@@ -11,14 +11,16 @@ const Experience = () => {
             <div className="exp-bx wow zoomIn">
               <h2>Experience</h2>
               <p>
-                Throughout my journey as a developer, I have gained expertise in
-                a diverse set of Experience that empower me to build scalable,
-                high-performance applications. From the front-end to the
-                back-end, I leverage modern tools and frameworks to craft
-                seamless user experiences and robust infrastructures.
+                Over the years, I have worked on a variety of projects that have
+                honed my skills as a software engineer and web developer. From
+                designing intuitive user interfaces to architecting scalable
+                backend systems, each experience has contributed to my growth
+                and expertise. I have collaborated with teams, tackled complex
+                challenges, and delivered solutions that drive efficiency and
+                innovation.
                 <br />
-                <br /> Below is a selection of the key Experience I’ve worked
-                with to bring projects to life.
+                <br /> Below is a glimpse into the roles and projects that have
+                shaped my journey in the tech industry.
               </p>
               <TrackVisibility partialVisibility>
                 {({ isVisible }) => (
