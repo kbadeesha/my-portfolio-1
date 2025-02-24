@@ -1,7 +1,7 @@
 import React from "react";
 import TrackVisibility from "react-on-screen";
-import { TechnologiesData } from "./TechnologiesData";
-import "../../styles/components/technologies.css";
+import { TechnologiesData } from "../../data/TechnologiesData";
+import "../../../styles/components/technologies.css";
 const Technologies = () => {
   return (
     <section className="tech" id="tech">

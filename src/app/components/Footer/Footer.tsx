@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import "../../styles/components/footer.css";
+import "../../../styles/components/footer.css";
 import logo from "../../../../public/assets/img/Logo.png";
 import navIcon1 from "../../../../public/assets/img/nav-icon1.svg";
 import navIcon2 from "../../../../public/assets/img/nav-icon2.svg";
@@ -10,10 +10,18 @@ export const Footer = () => {
     <footer className="footer">
       <Container>
         <Row>
-          <Col xs={12} sm={6} className="d-flex align-items-center justify-content-center footer-logo-container">
+          <Col
+            xs={12}
+            sm={6}
+            className="d-flex align-items-center justify-content-center footer-logo-container"
+          >
             <img src={logo.src} alt="Logo" className="footer-logo" />
           </Col>
-          <Col xs={12} sm={6} className="d-flex align-items-center justify-content-center footer-social-container">
+          <Col
+            xs={12}
+            sm={6}
+            className="d-flex align-items-center justify-content-center footer-social-container"
+          >
             <div className="social-icon">
               <a
                 href="https://www.linkedin.com/in/adeesha-kristhorubaduge-579b46199/"

@@ -1,6 +1,7 @@
 import React from "react";
 import TrackVisibility from "react-on-screen";
-import "../../styles/components/experience.css";
+import "../../../styles/components/experience.css";
+import ExperienceCard from "./ExperienceCard/ExperienceCard";
 const Experience = () => {
   return (
     <section className="exp" id="exp">
@@ -29,7 +30,7 @@ const Experience = () => {
                       isVisible ? "animate__animated animate__fadeInUp" : ""
                     }`}
                   >
-                    <>Helow</>
+                    <ExperienceCard />
                   </div>
                 )}
               </TrackVisibility>

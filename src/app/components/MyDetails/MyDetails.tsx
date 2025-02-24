@@ -4,7 +4,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
 import Header1 from "../../../../public/assets/img/Header1.png";
 import Image from "next/image"; // Import the Image component
-import "../../styles/components/my-details.css";
+import "../../../styles/components/my-details.css";
 
 const MyDetails = () => {
   const [loopNum, setLoopNum] = useState(0);
