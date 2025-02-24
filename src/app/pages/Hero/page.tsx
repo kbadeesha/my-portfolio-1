@@ -11,18 +11,17 @@ import Projects from "@/app/components/Projects/Projects";
 const Hero = () => {
   return (
     <Container>
-      <div
-        className="bg-fixed bg-center py-8 px-4"
-        style={{ position: "relative" }}
-      >
-        <Image
-          src={bannerImage}
-          alt="Banner"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center top"
-          className="bg-image" // You can add this class for custom styling
-        />
+      <div className="relative py-8 px-4">
+        <div className="bg-image">
+          <Image
+            src={bannerImage}
+            alt="Banner"
+            layout="fill"
+            objectFit="cover" 
+            objectPosition="center top"
+            className="absolute inset-0"
+          />
+        </div>
         <MyDetails />
         <Technologies />
         <Experience />

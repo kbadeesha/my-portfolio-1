@@ -70,3 +70,16 @@ ul {
   line-height: normal;
   text-decoration: none;
 }
+
+.bg-image {
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Ensures the image stays behind content */
+  /* background-image: url('path/to/bannerImage'); */
+  background-repeat: no-repeat;
+  background-size: cover;  /* You can adjust size as needed */
+  background-position: center center;
+}
