@@ -35,6 +35,13 @@
   line-height: 1.5em;
   margin: 14px 0 75px 0;
 }
+.exp-desc {
+  color: #b8b8b8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px 0 75px 0;
+}
 
 .exp-container {
   font-size: 18px;

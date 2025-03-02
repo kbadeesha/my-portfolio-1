@@ -2,6 +2,7 @@ import React from "react";
 import TrackVisibility from "react-on-screen";
 import "../../../styles/components/experience.css";
 import ExperienceCard from "./ExperienceCard/ExperienceCard";
+import DecryptedText from "../Shared/DecryptedText/DecryptedText";
 const Experience = () => {
   return (
     <section className="exp" id="exp">
@@ -10,7 +11,18 @@ const Experience = () => {
         <div className="row">
           <div className="col-12">
             <div className="exp-bx wow zoomIn">
-              <h2>Experience</h2>
+              <h2>
+                <DecryptedText
+                  text="Experience"
+                  speed={60}
+                  maxIterations={12}
+                  characters="ABCD1234!?"
+                  className="revealed"
+                  parentClassName="all-letters"
+                  encryptedClassName="encrypted"
+                  sequential={true}
+                />
+              </h2>
               <p>
                 Over the years, I have worked on a variety of projects that have
                 honed my skills as a software engineer and web developer. From

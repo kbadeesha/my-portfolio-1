@@ -11,7 +11,7 @@ const ExperienceCard = () => {
     <div className="exp-main-card">
       {experienceData.map((experience, index) => {
         return (
-          <div key={index} className="exp-container">
+          <div key={index} className="exp-container">      
             <div className="exp-company-details">
               <a href={experience.company_url}>
                 <Image
