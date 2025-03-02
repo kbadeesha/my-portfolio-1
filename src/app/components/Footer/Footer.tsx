@@ -17,6 +17,7 @@ export const Footer = () => {
           >
             <img src={logo.src} alt="Logo" className="footer-logo" />
           </Col>
+          <p className="mt-0 mb-3">adeesha.kristhorubaduge@gmail.com</p>
           <Col
             xs={12}
             sm={6}

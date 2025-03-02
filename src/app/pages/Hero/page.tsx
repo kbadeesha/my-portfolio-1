@@ -25,7 +25,7 @@ const Hero = () => {
         <MyDetails />
         <Technologies />
         <Experience />
-        <Projects />
+        {/* <Projects /> */}
       </div>
     </Container>
   );

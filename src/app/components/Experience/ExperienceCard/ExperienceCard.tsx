@@ -64,6 +64,19 @@ const ExperienceCard = () => {
                         );
                       })}
                     </div>
+
+                    <div className="project-points">
+                      {project.project_points.map((point, point_idx) => {
+                        return (
+                          <div key={point_idx} className="point-item">
+                            <ul>
+                              <li key={point.id}>{point.point}</li>
+                            </ul>
+                            <br />
+                          </div>
+                        );
+                      })}
+                    </div>
                   </div>
                 );
               })}

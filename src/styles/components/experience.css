@@ -37,6 +37,10 @@
 }
 
 .exp-container {
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  color: #b8b8b8;
   .exp-company-details {
     display: flex;
     gap: 20px;
@@ -53,7 +57,7 @@
   }
   .exp-designation {
     padding-top: 10px;
-    font-size: 20px;
+    font-size: 25px;
     text-align: left;
     font-weight: 600;
   }
@@ -62,6 +66,8 @@
     text-align: left;
     .proj-item {
       .proj-details {
+        font-weight: 500;
+        font-size: 20px;
         display: flex;
         justify-content: space-between;
         .proj-detail-title {
@@ -87,6 +93,17 @@
           }
         }
       }
+      .project-points {
+        padding: 20px;
+        .point-item {
+          padding-bottom: 15px;
+        }
+      }
     }
   }
+}
+
+ul {
+  list-style-type: square; /* Change bullet point style */
+  padding-left: 20px;
 }
