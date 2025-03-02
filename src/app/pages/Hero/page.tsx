@@ -7,10 +7,12 @@ import Image from "next/image"; // Import next/image
 import bannerImage from "../../../../public/assets/img/banner-bg.png";
 import Experience from "@/app/components/Experience/Experience";
 import Projects from "@/app/components/Projects/Projects";
+import SplashCursor from "@/appcomponents/Shared/SplashCursor/SplashCursor";
 
 const Hero = () => {
   return (
     <Container>
+      <SplashCursor />
       <div className="relative py-8 hero-container">
         <div className="bg-image">
           <Image
