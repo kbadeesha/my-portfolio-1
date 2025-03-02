@@ -70,7 +70,10 @@ ul {
   line-height: normal;
   text-decoration: none;
 }
-
+.hero-container{
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
 .bg-image {
   position: fixed; 
   top: 0; 

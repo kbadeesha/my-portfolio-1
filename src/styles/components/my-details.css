@@ -32,7 +32,7 @@
     letter-spacing: 0.8px;
     line-height: 1.5em;
     margin-top: 20px; 
-    width: 57%;  }
+ }
     
   .my-details button {
     color: #fff;
@@ -54,7 +54,6 @@
   }
   .my-details img {
     animation: updown 3s linear infinite;
-    margin-right: 140px; /* Optional: Adds space between image and text */
     max-width: 100%; /* Prevents the image from stretching */
     margin-top: -100px;
   

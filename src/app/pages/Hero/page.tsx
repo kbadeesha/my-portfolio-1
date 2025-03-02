@@ -11,13 +11,13 @@ import Projects from "@/app/components/Projects/Projects";
 const Hero = () => {
   return (
     <Container>
-      <div className="relative py-8 px-4">
+      <div className="relative py-8 hero-container">
         <div className="bg-image">
           <Image
             src={bannerImage}
             alt="Banner"
             layout="fill"
-            objectFit="cover" 
+            objectFit="cover"
             objectPosition="center top"
             className="absolute inset-0"
           />

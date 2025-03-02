@@ -10,11 +10,12 @@ import node_logo from "../../../public/assets/img/tech_Logo/node_icon.png";
 import bootstrap_logo from "../../../public/assets/img/tech_Logo/mui_logo.png";
 import mui_logo from "../../../public/assets/img/tech_Logo/bootstrap_logo.png";
 import kore_logo from "../../../public/assets/img/tech_Logo/korelogo.png";
+import angular_logo from "../../../public/assets/img/tech_Logo/angular_logo.png";
 import { ITechnologyData } from "../shared/interfaces/technologies.interface";
 
 export const TechnologiesData: ITechnologyData[] = [
   { name: "ReactJS", logo: react_logo },
-  { name: "Angular", logo: react_logo },
+  { name: "Angular", logo: angular_logo },
   { name: "NEXT.JS", logo: nextJs_logo },
   { name: "TypeScript", logo: TS_logo },
   { name: "JavaScript", logo: js_logo },
@@ -29,7 +30,7 @@ export const TechnologiesData: ITechnologyData[] = [
 ];
 export const TECHNOLOGIES = {
   REACT: { name: "ReactJS", logo: react_logo },
-  ANGULAR: { name: "Angular", logo: react_logo },
+  ANGULAR: { name: "Angular", logo: angular_logo },
   NEXT: { name: "NEXT.JS", logo: nextJs_logo },
   TYPESCRIPT: { name: "TypeScript", logo: TS_logo },
   JAVASCRIPT: { name: "JavaScript", logo: js_logo },

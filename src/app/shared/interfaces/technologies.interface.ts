@@ -2,6 +2,7 @@ import { StaticImageData } from "next/image";
 
 export interface IExperience {
   companyName: string;
+  companyLogo: StaticImageData;
   location: string;
   duration: string;
   designation: string;

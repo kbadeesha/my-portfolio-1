@@ -1,9 +1,12 @@
 import { IExperience } from "../shared/interfaces/technologies.interface";
 import { TECHNOLOGIES } from "./TechnologiesData";
+import softcodeit_logo from "../../../public/assets/img/company_logos/softcodeit_solutions_pvt_ltd_logo.jpeg";
+import itx_logo from "../../../public/assets/img/company_logos/1641293756236.jpeg";
 
 export const EXPERIENCE_DATA: IExperience[] = [
   {
     companyName: "SoftcodeIT Solutions Pvt Ltd",
+    companyLogo: softcodeit_logo,
     location: "Colombo, Sri Lanka",
     duration: "April 2022 - Present",
     designation: "Software Engineer",
@@ -56,6 +59,7 @@ export const EXPERIENCE_DATA: IExperience[] = [
   },
   {
     companyName: "ITX360, Expo Lanka (Pvt) Ltd ",
+    companyLogo: itx_logo,
     location: "Colombo, Sri Lanka",
     duration: "October 2021 - April 2022",
     designation: "Intern Software Engineer",
