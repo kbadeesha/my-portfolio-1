@@ -7,6 +7,7 @@ export const EXPERIENCE_DATA: IExperience[] = [
   {
     companyName: "SoftcodeIT Solutions Pvt Ltd",
     companyLogo: softcodeit_logo,
+    company_url: "https://www.softcodeit.com/",
     location: "Colombo, Sri Lanka",
     duration: "April 2022 - Present",
     designation: "Software Engineer",
@@ -60,6 +61,7 @@ export const EXPERIENCE_DATA: IExperience[] = [
   {
     companyName: "ITX360, Expo Lanka (Pvt) Ltd ",
     companyLogo: itx_logo,
+    company_url: "https://www.itx360.com/",
     location: "Colombo, Sri Lanka",
     duration: "October 2021 - April 2022",
     designation: "Intern Software Engineer",

@@ -30,11 +30,13 @@ const Technologies = () => {
                   >
                     {TechnologiesData.map((tech, index) => (
                       <div key={index} className="tech-item">
-                        <img
-                          src={tech.logo.src}
-                          alt={`${tech.name} logo`}
-                          className="tech-logo"
-                        />
+                        <a href={tech.url}>
+                          <img
+                            src={tech.logo.src}
+                            alt={`${tech.name} logo`}
+                            className="tech-logo"
+                          />
+                        </a>
                         <p>{tech.name}</p>
                       </div>
                     ))}

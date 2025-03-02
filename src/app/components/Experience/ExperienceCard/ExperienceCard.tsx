@@ -13,14 +13,18 @@ const ExperienceCard = () => {
         return (
           <div key={index} className="exp-container">
             <div className="exp-company-details">
-              <Image
-                src={experience.companyLogo}
-                alt="Header Img"
-                width={60}
-                height={60}
-              />
+              <a href={experience.company_url}>
+                <Image
+                  src={experience.companyLogo}
+                  alt="Header Img"
+                  width={60}
+                  height={60}
+                />
+              </a>
               <div className="company-title-grid">
-                <h3 className="mt-2">{experience.companyName}</h3>
+                <a href={experience.company_url}>
+                  <h3 className="mt-2">{experience.companyName}</h3>
+                </a>
                 <div className="exp-location">{experience.location}</div>
               </div>
               <div className="mt-4  exp-duration">{experience.duration}</div>
@@ -49,8 +53,8 @@ const ExperienceCard = () => {
                       {project.project_technologies.map((tech, tech_idx) => {
                         return (
                           <div key={tech_idx} className="tech-item">
-                            <Tooltip title={tech.name}>
-                              <a href="/">
+                            <a target="_blank" href={tech.url}>
+                              <Tooltip title={tech.name}>
                                 <Image
                                   src={tech.logo}
                                   alt="Header Img"
@@ -58,8 +62,8 @@ const ExperienceCard = () => {
                                   height={60}
                                   className="tech-item-logo"
                                 />
-                              </a>
-                            </Tooltip>
+                              </Tooltip>
+                            </a>
                           </div>
                         );
                       })}

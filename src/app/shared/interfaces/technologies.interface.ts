@@ -3,6 +3,7 @@ import { StaticImageData } from "next/image";
 export interface IExperience {
   companyName: string;
   companyLogo: StaticImageData;
+  company_url: string;
   location: string;
   duration: string;
   designation: string;
@@ -20,6 +21,7 @@ export interface IProject {
 export interface ITechnologyData {
   name: string;
   logo: StaticImageData;
+  url?: string;
 }
 
 export interface IProjectPoint {
