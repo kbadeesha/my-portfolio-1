@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image"; // Import Image component
 import "../../../styles/components/navbar.css";
+import { ImageData } from "@/app/data/ImagesData";
 
 const NavBar = () => {
   return (
@@ -13,7 +14,7 @@ const NavBar = () => {
           aria-label="Visit Adeesha's LinkedIn Profile"
         >
           <Image
-            src="/assets/img/Logo.png" // Direct path from public folder
+            src={ImageData.NAVBAR_LOGO.src}
             alt="Logo"
             className="navbar-logo"
             height={33}
