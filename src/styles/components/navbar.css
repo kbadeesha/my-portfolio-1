@@ -19,7 +19,9 @@
   color: white;
   text-decoration: none;
 }
-
+.logo {
+  display: flex;
+}
 .my-details-cont {
   padding-top: 10px;
   .name {
