@@ -1,5 +1,5 @@
 .navbar {
-  transition: background-color 0.3s ease;
+  transition: background-color 4s ease;
   position: sticky;
   top: 0;
   background-color: #34353a;
@@ -12,7 +12,9 @@
   transition: 0.32s ease-in-out;
   width: 100%;
 }
-
+.navbar.hidden {
+  display: none; /* Hide the entire navbar when scrolled */
+}
 .logo a {
   display: flex;
   font-size: 24px;
@@ -21,12 +23,10 @@
   text-decoration: none;
 }
 .navbar.scrolled {
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0
-  ); /* Fully transparent when scrolled */
+  background-color: rgba(255, 255, 255, 0);
+  /* Fully transparent when scrolled */
+  height: 60px;
+  display: none;
 }
 .logo {
   display: flex;
