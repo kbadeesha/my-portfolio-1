@@ -1,5 +1,4 @@
 .navbar {
-  transition: background-color 4s ease;
   position: sticky;
   top: 0;
   background-color: #34353a;
@@ -12,9 +11,7 @@
   transition: 0.32s ease-in-out;
   width: 100%;
 }
-.navbar.hidden {
-  display: none; /* Hide the entire navbar when scrolled */
-}
+
 .logo a {
   display: flex;
   font-size: 24px;
@@ -22,17 +19,11 @@
   color: white;
   text-decoration: none;
 }
-.navbar.scrolled {
-  background-color: rgba(255, 255, 255, 0);
-  /* Fully transparent when scrolled */
-  height: 60px;
-  display: none;
-}
 .logo {
   display: flex;
 }
 .my-details-cont {
-  padding-top: 22px;
+  padding-top: 10px;
   .name {
     font-size: larger;
     font-weight: 600;
@@ -42,8 +33,8 @@
   }
 }
 .navbar-logo {
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
 }
 .socialLinks {
   display: flex;

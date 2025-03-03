@@ -1,81 +1,160 @@
-/* tech.css */
-.container-tech{
-    padding-top: 15rem;
+.container-tech {
+  padding-top: 15rem;
 }
+
 .tech {
-    margin: 2rem 0;
-    padding: 0 0 1em 0;
-    position: relative;
-  }
-  .tech-bx {
-    background: #34353A;
-    /* background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(26,4,33,1) 48%, rgba(0,0,0,1) 100%); */
-    border-radius: 64px;
-    text-align: center;
-    padding: 60px 50px;
-    margin-top: -60px;
-  }
-  .tech h2 {
-    font-size: 45px;
-    font-weight: 700;
-  }
-  .tech p {
-    color: #b8b8b8;
-    font-size: 18px;
-    letter-spacing: 0.8px;
-    line-height: 1.5em;
-    margin: 14px 0 75px 0;
-  }
+  margin: 2rem 0;
+  padding: 0 0 1em 0;
+  position: relative;
+}
+
+.tech-bx {
+  background: #34353A;
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+}
+
+.tech h2 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.tech p {
+  color: #b8b8b8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px 0 75px 0;
+}
 
 .technologies {
-    padding: 0 0 50px 0;
-    position: relative;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-  }
+  padding: 0 0 50px 0;
+  position: relative;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .tech-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.tech-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tech-logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+}
+
+.tech-item:hover .tech-logo {
+  transform: rotate(10deg);
+}
+
+p {
+  font-weight: bold;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile Media Queries */
+@media (max-width: 768px) {
+  .tech-bx {
+    padding: 40px 30px; /* Reduce padding on smaller screens */
+    margin-top: -40px; /* Adjust the margin */
+  }
+
+  .tech h2 {
+    font-size: 36px; /* Smaller heading for mobile */
+  }
+
+  .tech p {
+    font-size: 16px; /* Adjust paragraph size for mobile */
+    margin: 14px 0 40px 0; /* Reduce bottom margin */
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjust grid columns */
+    gap: 15px; /* Reduce gap between items */
+    padding: 10px; /* Reduce padding inside the grid */
+  }
+
   .tech-item {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-    animation: fadeIn 1s ease-in-out;
+    margin-bottom: 30px; /* Add margin for better spacing */
   }
-  
-  .tech-item:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
+
   .tech-logo {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 10px;
-    transition: transform 0.3s;
+    width: 60px; /* Smaller logo size */
+    height: 60px; /* Adjust logo height */
   }
-  
-  .tech-item:hover .tech-logo {
-    transform: rotate(10deg);
+
+  .tech-item:hover {
+    transform: scale(1.05); /* Slightly smaller hover effect */
   }
-  
+
   p {
-    font-weight: bold;
-    text-align: center;
+    font-size: 14px; /* Adjust font size of text */
   }
-  
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+}
+
+/* Very small screens (e.g., phones in portrait) */
+@media (max-width: 480px) {
+  .tech-bx {
+    padding: 30px 20px; /* Further reduce padding for very small screens */
   }
+
+  .tech h2 {
+    font-size: 28px; /* Reduce the font size even more */
+  }
+
+  .tech p {
+    font-size: 14px; /* Keep the text size smaller */
+    margin: 10px 0 30px 0; /* Adjust margin */
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Even smaller columns */
+    gap: 10px; /* Further reduce gap */
+  }
+
+  .tech-logo {
+    width: 50px; /* Even smaller logo size */
+    height: 50px; /* Adjust logo height */
+  }
+
+  .tech-item:hover {
+    transform: scale(1.05); /* Slight hover effect */
+  }
+
+  p {
+    font-size: 12px; /* Even smaller text size */
+  }
+}

@@ -1,78 +1,185 @@
-
 .my-details {
-    padding-top: 8rem;
-    margin-left: 7rem;
-    text-align: center;
+  padding-top: 8rem;
+  margin-left: 7rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row; /* Keep the columns side-by-side on large screens */
+  align-items: center; /* Vertically center the items */
+  justify-content: center;
+  gap: 40px; /* Add some space between the image and text */
+}
+.top-row {
+  display: flex;
+  .col-text {
+    max-width: 60%;
   }
+  .col-img {
+    max-width: 40%;
+    align-content: center;
+  }
+}
+
+.my-details .tagline {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  background: linear-gradient(
+    90.21deg,
+    rgba(170, 54, 124, 0.5) -5.91%,
+    rgba(74, 47, 189, 0.5) 111.58%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.my-details h1 {
+  color: #fff;
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.my-details p {
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin-top: 20px;
+}
+
+.my-details button {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 60px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+}
+
+.my-details button svg {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+
+.my-details button:hover svg {
+  margin-left: 25px;
+}
+
+.my-details img {
+  animation: updown 3s linear infinite;
+  max-width: 100%; /* Prevents the image from stretching */
+  height: auto; /* Ensures the image is properly scaled */
+  margin-top: -100px;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+.txt-rotate > .wrap {
+  border-right: 0.08em solid #666;
+}
+
+.logoImage {
+  width: 100%; /* Make the logo container responsive */
+  display: flex;
+  justify-content: center; /* Center the logo */
+  margin-bottom: 20px; /* Space below the image */
+}
+
+/* Medium to Large Screens (image on right, text on left) */
+@media (min-width: 768px) {
+  .my-details {
+    flex-direction: row; /* Make sure it's side by side on large screens */
+    text-align: left; /* Align text left for large screens */
+  }
+
+  .my-details .logoImage {
+    order: 2; /* Place the image on the right */
+  }
+
+  .my-details .tagline,
+  .my-details h1,
+  .my-details p {
+    text-align: left; /* Ensure the text is aligned left */
+  }
+}
+
+/* For medium to small screens (image on top, text below) */
+@media (max-width: 768px) {
+  .my-details {
+    margin-left: 0; /* Remove the left margin */
+    padding-top: 4rem; /* Reduce the top padding */
+    flex-direction: column; /* Stack the image and text vertically */
+    text-align: center; /* Center the text */
+    gap: 0; /* Remove gap between image and text */
+  }
+
+  .my-details h1 {
+    font-size: 40px; /* Smaller font size for mobile */
+  }
+
   .my-details .tagline {
-    font-weight: 700;
-    letter-spacing: 0.8px;
-    padding: 8px 10px;
-    background: linear-gradient(
-      90.21deg,
-      rgba(170, 54, 124, 0.5) -5.91%,
-      rgba(74, 47, 189, 0.5) 111.58%
-    );
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    font-size: 20px;
-    margin-bottom: 16px;
-    display: inline-block;
+    font-size: 16px; /* Adjust tagline font size */
+  }
+
+  .my-details p {
+    font-size: 16px; /* Adjust paragraph font size */
+  }
+}
+
+@media (max-width: 580px) {
+  .top-row {
+    display: block;
+    .col-text {
+      max-width: 100%;
+    }
+    .col-img {
+      padding-top: 85px;
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  /* For very small screens */
+
+  .top-row {
+    display: block;
+    .col-text {
+      max-width: 100%;
+    }
+    .col-img {
+      padding-top: 85px;
+      max-width: 100%;
+    }
   }
   .my-details h1 {
-    font-size: 65px;
-    font-weight: 700;
-    letter-spacing: 0.8px;
-    line-height: 1;
-    margin-bottom: 20px;
-    display: block;
-  }
-  .my-details p {
-    color: #fff;
-    font-size: 18px;
-    letter-spacing: 0.8px;
-    line-height: 1.5em;
-    margin-top: 20px; 
- }
-    
-  .my-details button {
-    color: #fff;
-    font-weight: 700;
-    font-size: 20px;
-    margin-top: 60px;
-    letter-spacing: 0.8px;
-    display: flex;
-    align-items: center;
-  }
-  .my-details button svg {
-    font-size: 25px;
-    margin-left: 10px;
-    transition: 0.3s ease-in-out;
-    line-height: 1;
-  }
-  .my-details button:hover svg {
-    margin-left: 25px;
-  }
-  .my-details img {
-    animation: updown 3s linear infinite;
-    max-width: 100%; /* Prevents the image from stretching */
-    margin-top: -100px;
-  
-  }
-  @keyframes updown {
-    0% {
-      transform: translateY(-20px);
-    }
-    50% {
-      transform: translateY(20px);
-    }
-    100% {
-      transform: translateY(-20px);
-    }
-  }
-  .txt-rotate > .wrap {
-    border-right: 0.08em solid #666;
+    font-size: 30px; /* Further reduce the font size */
   }
 
- .logoImage{
-    float: inline-end;
+  .my-details p {
+    font-size: 14px; /* Adjust paragraph font size */
   }
+
+  .logoImage {
+    margin-bottom: 30px; /* Add some space below the image */
+  }
+}

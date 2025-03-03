@@ -13,7 +13,7 @@ const ExperienceCard = () => {
         return (
           <div key={index} className="exp-container">
             <div className="exp-company-details">
-              <a className="exp-comp-image" href={experience.company_url}>
+              <a href={experience.company_url}>
                 <Image
                   src={experience.companyLogo}
                   alt="Header Img"
