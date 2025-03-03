@@ -3,7 +3,6 @@ import Image from "next/image"; // Import Image component
 import "../../../styles/components/navbar.css";
 import { ImageData } from "@/app/data/ImagesData";
 
-
 const NavBar = () => {
   return (
     <nav className="navbar">
@@ -31,7 +30,7 @@ const NavBar = () => {
           aria-label="Visit Adeesha's LinkedIn Profile"
         >
           <Image
-            src="/assets/img/nav-icon1.svg"
+            src={ImageData.LINKEDIN_ICON.img}
             alt="LinkedIn Icon"
             className="navbar-social-icon"
             height={33}
@@ -45,7 +44,7 @@ const NavBar = () => {
           aria-label="Visit Adeesha's Facebook Profile"
         >
           <Image
-            src="/assets/img/nav-icon2.svg"
+            src={ImageData.FB_ICON.img}
             alt="Facebook Icon"
             className="navbar-social-icon"
             height={33}
@@ -59,7 +58,7 @@ const NavBar = () => {
           aria-label="Visit Adeesha's GitHub Profile"
         >
           <Image
-            src="/assets/img/nav-icon7.svg"
+            src={ImageData.GIT_ICON.img}
             alt="GitHub Icon"
             className="navbar-social-icon"
             height={33}
