@@ -6,7 +6,6 @@ import { Container } from "react-bootstrap";
 import Image from "next/image"; // Import next/image
 import bannerImage from "../../../../public/assets/img/banner-bg.png";
 import Experience from "@/app/components/Experience/Experience";
-import Projects from "@/app/components/Projects/Projects";
 import SplashCursor from "@/appcomponents/Shared/SplashCursor/SplashCursor";
 
 const Hero = () => {

@@ -7,7 +7,7 @@ const styles = {
     whiteSpace: "pre-wrap",
   },
   srOnly: {
-    position: "absolute" as "absolute",
+    position: "absolute" as const,
     width: "1px",
     height: "1px",
     padding: 0,
@@ -51,13 +51,14 @@ export default function DecryptedText({
   const [isHovering, setIsHovering] = useState<boolean>(false);
   const [isScrambling, setIsScrambling] = useState<boolean>(false);
   const [revealedIndices, setRevealedIndices] = useState<Set<number>>(
-    new Set(),
+    new Set()
   );
   const [hasAnimated, setHasAnimated] = useState<boolean>(false);
   const containerRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
-    let interval: number;
+    let interval: any; // Use `number` instead of `Timeout`
+
     let currentIteration = 0;
 
     const getNextIndex = (revealedSet: Set<number>): number => {
@@ -97,7 +98,7 @@ export default function DecryptedText({
 
     const shuffleText = (
       originalText: string,
-      currentRevealed: Set<number>,
+      currentRevealed: Set<number>
     ): string => {
       if (useOriginalCharsOnly) {
         const positions = originalText.split("").map((char, i) => ({
@@ -153,7 +154,7 @@ export default function DecryptedText({
               setDisplayText(shuffleText(text, newRevealed));
               return newRevealed;
             } else {
-              clearInterval(interval);
+              clearInterval(interval); // Clear the interval when done
               setIsScrambling(false);
               return prevRevealed;
             }
@@ -161,7 +162,7 @@ export default function DecryptedText({
             setDisplayText(shuffleText(text, prevRevealed));
             currentIteration++;
             if (currentIteration >= maxIterations) {
-              clearInterval(interval);
+              clearInterval(interval); // Clear the interval when done
               setIsScrambling(false);
               setDisplayText(text);
             }
@@ -176,7 +177,7 @@ export default function DecryptedText({
     }
 
     return () => {
-      if (interval) clearInterval(interval);
+      if (interval) clearInterval(interval); // Clear the interval on cleanup
     };
   }, [
     isHovering,
@@ -209,7 +210,7 @@ export default function DecryptedText({
 
     const observer = new IntersectionObserver(
       observerCallback,
-      observerOptions,
+      observerOptions
     );
     const currentRef = containerRef.current;
     if (currentRef) {
