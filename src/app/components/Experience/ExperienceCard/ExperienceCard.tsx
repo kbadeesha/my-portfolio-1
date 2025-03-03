@@ -11,7 +11,7 @@ const ExperienceCard = () => {
     <div className="exp-main-card">
       {experienceData.map((experience, index) => {
         return (
-          <div key={index} className="exp-container">      
+          <div key={index} className="exp-container">
             <div className="exp-company-details">
               <a href={experience.company_url}>
                 <Image
@@ -38,9 +38,11 @@ const ExperienceCard = () => {
                   <div key={poj_idx} className="proj-item">
                     <div className="proj-details">
                       <div className="proj-detail-title">
-                        <div className="proj-company">
-                          {project.project_company} {"-   "}
-                        </div>
+                        <a href={project.project_company_url}>
+                          <div className="proj-company">
+                            {project.project_company} {"-   "}
+                          </div>
+                        </a>
                         <div className="proj-name">
                           {" " + project.project_name}
                         </div>

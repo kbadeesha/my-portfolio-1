@@ -4,8 +4,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
 import Image from "next/image"; // Import the Image component
 import "../../../styles/components/my-details.css";
-// import { ImageData } from "@/app/data/ImagesData";
-
+import { ImageData } from "@/app/data/ImagesData";
 
 const MyDetails = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -64,7 +63,7 @@ const MyDetails = () => {
                     }
                   >
                     <Image
-                      src={"ImageData.HEADER.img"}
+                      src={ImageData.HEADER.img}
                       alt="Header Img"
                       width={500}
                       height={500}
@@ -90,10 +89,14 @@ const MyDetails = () => {
                     </span>
                   </h1>
                   <p>
-                    Your friendly neighborhood frontend developer and JavaScript
-                    engineer. I spend my days (and often nights) painting the
-                    Internet canvas with PROJECTS and lines of code, turning
-                    zeroes and ones into immersive, interactive experiences.
+                    I’m your friendly neighborhood Frontend Developer, Software
+                    Engineer, and Chatbot Developer. I spend my days (and often
+                    nights) weaving code into the fabric of the digital world,
+                    turning zeroes and ones into immersive, interactive
+                    experiences. I’m constantly exploring new ways to transform
+                    ideas into digital reality. Every project is a new canvas,
+                    and every line of code is a brushstroke that brings the
+                    internet to life.
                   </p>
                 </div>
               )}

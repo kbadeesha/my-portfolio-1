@@ -12,6 +12,7 @@ export interface IExperience {
 
 export interface IProject {
   project_company: string;
+  project_company_url?: string;
   project_name: string;
   project_technologies: ITechnologyData[];
   project_company_location: string;

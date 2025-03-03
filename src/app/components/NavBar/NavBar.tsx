@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image"; // Import Image component
 import "../../../styles/components/navbar.css";
-// import { ImageData } from "@/app/data/ImagesData";
+import { ImageData } from "@/app/data/ImagesData";
 
 const NavBar = () => {
   return (
@@ -14,13 +14,19 @@ const NavBar = () => {
           aria-label="Visit Adeesha's LinkedIn Profile"
         >
           <Image
-            src={"ImageData.NAVBAR_LOGO.img"}
+            src={ImageData.NAVBAR_LOGO.img}
             alt="Logo"
             className="navbar-logo"
             height={33}
             width={33}
           />
         </a>
+        <div className="my-details-cont">
+          <div className="name">Adeesha Kristhoru Baduge</div>
+          <a href="mailto:adeesha.kristhorubaduge@gmail.com">
+            <div className="email">adeesha.kristhorubaduge@gmail.com</div>
+          </a>
+        </div>
       </span>
       <div className="socialLinks">
         <a
@@ -30,7 +36,7 @@ const NavBar = () => {
           aria-label="Visit Adeesha's LinkedIn Profile"
         >
           <Image
-            src={"ImageData.LINKEDIN_ICON.img"}
+            src={ImageData.LINKEDIN_ICON.img}
             alt="LinkedIn Icon"
             className="navbar-social-icon"
             height={33}
@@ -44,7 +50,7 @@ const NavBar = () => {
           aria-label="Visit Adeesha's Facebook Profile"
         >
           <Image
-            src={"ImageData.FB_ICON.img"}
+            src={ImageData.FB_ICON.img}
             alt="Facebook Icon"
             className="navbar-social-icon"
             height={33}
@@ -58,7 +64,7 @@ const NavBar = () => {
           aria-label="Visit Adeesha's GitHub Profile"
         >
           <Image
-            src={"ImageData.GIT_ICON.img"}
+            src={ImageData.GIT_ICON.img}
             alt="GitHub Icon"
             className="navbar-social-icon"
             height={33}

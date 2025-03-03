@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/src/styles/components/navbar.css"],"sourcesContent":[".navbar {\r\n  position: sticky;\r\n  top: 0;\r\n  background-color: #34353a;\r\n  color: white;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  padding: 5px 20px;\r\n  z-index: 1000;\r\n  transition: 0.32s ease-in-out;\r\n  width: 100%;\r\n}\r\n\r\n.logo a {\r\n  display: flex;\r\n  font-size: 24px;\r\n  font-weight: bold;\r\n  color: white;\r\n  text-decoration: none;\r\n}\r\n\r\n.my-details-cont {\r\n  padding-top: 10px;\r\n  .name {\r\n    font-size: larger;\r\n    font-weight: 600;\r\n  }\r\n  .email {\r\n    font-size: small;\r\n  }\r\n}\r\n.navbar-logo {\r\n  height: 80px;\r\n  width: 80px;\r\n}\r\n.socialLinks {\r\n  display: flex;\r\n  justify-content: flex-end;\r\n  align-items: center;\r\n}\r\n\r\n.socialLinks a {\r\n  margin-left: 20px;\r\n  color: white;\r\n  text-decoration: none;\r\n  margin-right: 20px;\r\n}\r\n\r\n.navbar-social-icon {\r\n  width: 24px;\r\n  height: 24px;\r\n  transition: transform 0.3s ease-in-out;\r\n}\r\n\r\n.socialLinks a:hover .navbar-social-icon {\r\n  transform: scale(1.1);\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;AAcA;;;;;;;;AAQA;;;;AAEE;;;;;AAIA;;;;AAIF;;;;;AAIA;;;;;;AAMA;;;;;;;AAOA;;;;;;AAMA"}},
+    {"offset": {"line": 63, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
