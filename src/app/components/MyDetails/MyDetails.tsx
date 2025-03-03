@@ -4,8 +4,8 @@ import { Col, Container, Row } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
 import Image from "next/image"; // Import the Image component
 import "../../../styles/components/my-details.css";
-// import { ImageData } from "@/app/data/ImagesData";
-// import { TECHNOLOGIES } from "@/app/data/TechnologiesData";
+import { ImageData } from "@/app/data/ImagesData";
+
 
 const MyDetails = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -64,7 +64,7 @@ const MyDetails = () => {
                     }
                   >
                     <Image
-                      src={"ImageData.HEADER.img"}
+                      src={ImageData.HEADER.img}
                       alt="Header Img"
                       width={500}
                       height={500}
