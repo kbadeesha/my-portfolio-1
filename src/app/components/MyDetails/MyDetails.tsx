@@ -63,7 +63,7 @@ const MyDetails = () => {
                     }
                   >
                     <Image
-                      src={ImageData.HEADER.src}
+                      src={ImageData.HEADER.img}
                       alt="Header Img"
                       width={500}
                       height={500}
