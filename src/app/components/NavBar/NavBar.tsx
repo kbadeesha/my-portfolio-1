@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image"; // Import Image component
 import "../../../styles/components/navbar.css";
-// import { ImageData } from "@/app/data/ImagesData";
+import { ImageData } from "@/app/data/ImagesData";
+
 
 const NavBar = () => {
   return (
@@ -14,7 +15,7 @@ const NavBar = () => {
           aria-label="Visit Adeesha's LinkedIn Profile"
         >
           <Image
-            src={"ImageData.NAVBAR_LOGO.img"}
+            src={ImageData.NAVBAR_LOGO.img}
             alt="Logo"
             className="navbar-logo"
             height={33}
