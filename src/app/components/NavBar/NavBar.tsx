@@ -10,7 +10,7 @@ const NavBar = () => {
     // Event listener to track scroll position
     const handleScroll = () => {
       if (window.scrollY > 50) {
-        // Adjust scroll position threshold as needed
+        // Adjust scroll positiond threshold as needed
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
