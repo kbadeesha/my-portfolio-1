@@ -5,7 +5,7 @@ import TrackVisibility from "react-on-screen";
 import Image from "next/image"; // Import the Image component
 import "../../../styles/components/my-details.css";
 // import { ImageData } from "@/app/data/ImagesData";
-import { TECHNOLOGIES, TechnologiesData } from "@/app/data/TechnologiesData";
+import { TECHNOLOGIES } from "@/app/data/TechnologiesData";
 
 const MyDetails = () => {
   const [loopNum, setLoopNum] = useState(0);
