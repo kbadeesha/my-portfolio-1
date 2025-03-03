@@ -1,0 +1,51 @@
+/* [project]/src/styles/components/navbar.css [app-client] (css) */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #34353a;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  z-index: 1000;
+  transition: all .32s ease-in-out;
+  width: 100%;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-logo {
+  height: 80px;
+  width: 80px;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.socialLinks a {
+  margin-left: 20px;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.navbar-social-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform .3s ease-in-out;
+}
+
+.socialLinks a:hover .navbar-social-icon {
+  transform: scale(1.1);
+}
+
+/*# sourceMappingURL=src_styles_components_navbar_b52d8e.css.map*/

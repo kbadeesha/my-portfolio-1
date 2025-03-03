@@ -1,0 +1,66 @@
+/* [project]/src/styles/components/footer.css [app-client] (css) */
+.footer {
+  bottom: 0;
+  padding: 10px 0;
+  background-color: #34353a;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.footer-logo {
+  width: 100px;
+}
+
+.footer-logo-container {
+  justify-items: center;
+}
+
+.footer-social-container {
+  justify-items: center;
+}
+
+.social-icon {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social-icon {
+  width: 30px;
+  transition: transform .3s;
+}
+
+.footer-social-icon:hover {
+  transform: scale(1.1);
+}
+
+.footer-text {
+  font-weight: 400;
+  font-size: 14px;
+  color: #b8b8b8;
+  letter-spacing: .5px;
+  margin-top: 20px;
+}
+
+@media (width <= 768px) {
+  .footer-logo {
+    width: 80px;
+  }
+
+  .social-icon {
+    justify-content: center;
+  }
+}
+
+@media (width <= 576px) {
+  .footer-logo {
+    width: 60px;
+  }
+
+  .footer-text {
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=src_styles_components_footer_b52d8e.css.map*/
