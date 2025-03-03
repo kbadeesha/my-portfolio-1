@@ -1,11 +1,32 @@
-import React from "react";
-import Image from "next/image"; // Import Image component
+import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import "../../../styles/components/navbar.css";
 import { ImageData } from "@/app/data/ImagesData";
 
 const NavBar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    // Event listener to track scroll position
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        // Adjust scroll position threshold as needed
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <span className="logo">
         <a
           href="https://www.linkedin.com/in/adeesha-kristhorubaduge-579b46199/"
@@ -21,7 +42,7 @@ const NavBar = () => {
             width={33}
           />
         </a>
-        <div className="my-details-cont">
+        <div className={`my-details-cont ${isScrolled ? "hidden" : ""}`}>
           <div className="name">Adeesha Kristhoru Baduge</div>
           <a href="mailto:adeesha.kristhorubaduge@gmail.com">
             <div className="email">adeesha.kristhorubaduge@gmail.com</div>
