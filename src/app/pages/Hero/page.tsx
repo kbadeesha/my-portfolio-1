@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="relative py-8 hero-container">
         <div className="bg-image">
           <Image
-            src={"/assets/img/banner-bg.png"}
+            src={`${process.env.BASE_PATH || ""}/assets/img/banner-bg.png`}
             alt="Banner"
             layout="fill"
             objectFit="cover"
