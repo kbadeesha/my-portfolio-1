@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
-import Header1 from "../../../../public/assets/img/Header1.png";
 import Image from "next/image"; // Import the Image component
 import "../../../styles/components/my-details.css";
 
@@ -66,7 +65,7 @@ const MyDetails = () => {
                     }
                   >
                     <Image
-                      src={Header1.src}
+                      src="/assets/img/Header1.png" // Direct path from public folder
                       alt="Header Img"
                       width={500}
                       height={500}
