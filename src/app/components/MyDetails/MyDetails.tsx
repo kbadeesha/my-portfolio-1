@@ -1,4 +1,3 @@
-"use client";
 import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
@@ -52,28 +51,9 @@ const MyDetails = () => {
   return (
     <section className="my-details" id="home">
       <Container>
-        <Row className="align-items-center">
-          <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div className="logoImage">
-                  <div
-                    className={
-                      isVisible ? " animate__animated animate__zoomIn " : ""
-                    }
-                  >
-                    <Image
-                      src={ImageData.HEADER.img}
-                      alt="Header Img"
-                      width={500}
-                      height={500}
-                    />
-                  </div>
-                </div>
-              )}
-            </TrackVisibility>
-          </Col>
-          <Col xs={12} md={6} xl={7}>
+        <Row className="align-items-center top-row">
+        
+          <Col xs={12} md={6} xl={7} className="col-text">
             <TrackVisibility>
               {({ isVisible }) => (
                 <div
@@ -98,6 +78,26 @@ const MyDetails = () => {
                     and every line of code is a brushstroke that brings the
                     internet to life.
                   </p>
+                </div>
+              )}
+            </TrackVisibility>
+          </Col>
+          <Col xs={12} md={6} xl={5} className="col-img">
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div className="logoImage">
+                  <div
+                    className={
+                      isVisible ? "animate__animated animate__zoomIn" : ""
+                    }
+                  >
+                    <Image
+                      src={ImageData.HEADER.img}
+                      alt="Header Img"
+                      width={500}
+                      height={500}
+                    />
+                  </div>
                 </div>
               )}
             </TrackVisibility>
