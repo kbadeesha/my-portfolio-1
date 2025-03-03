@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import "../../../styles/components/navbar.css";
-// import { ImageData } from "@/app/data/ImagesData";
+import { ImageData } from "@/app/data/ImagesData";
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,7 +35,7 @@ const NavBar = () => {
           aria-label="Visit Adeesha's LinkedIn Profile"
         >
           <Image
-            src={"ImageData.NAVBAR_LOGO.img"}
+            src={ImageData.NAVBAR_LOGO.img}
             alt="Logo"
             className="navbar-logo"
             height={33}
@@ -57,7 +57,7 @@ const NavBar = () => {
           aria-label="Visit Adeesha's LinkedIn Profile"
         >
           <Image
-            src={"ImageData.LINKEDIN_ICON.img"}
+            src={ImageData.LINKEDIN_ICON.img}
             alt="LinkedIn Icon"
             className="navbar-social-icon"
             height={33}
@@ -71,7 +71,7 @@ const NavBar = () => {
           aria-label="Visit Adeesha's Facebook Profile"
         >
           <Image
-            src={"ImageData.FB_ICON.img"}
+            src={ImageData.FB_ICON.img}
             alt="Facebook Icon"
             className="navbar-social-icon"
             height={33}
@@ -85,7 +85,7 @@ const NavBar = () => {
           aria-label="Visit Adeesha's GitHub Profile"
         >
           <Image
-            src={"ImageData.GIT_ICON.img"}
+            src={ImageData.GIT_ICON.img}
             alt="GitHub Icon"
             className="navbar-social-icon"
             height={33}

@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image"; // Import Next.js Image component
 import "../../../styles/components/footer.css";
-// import { ImageData } from "@/app/data/ImagesData";
+import { ImageData } from "@/app/data/ImagesData";
 
 export const Footer = () => {
   return (
@@ -47,7 +47,7 @@ export const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <Image
-                  src={"ImageData.FB_ICON.img"}
+                  src={ImageData.FB_ICON.img}
                   alt="Facebook"
                   width={24}
                   height={24}
