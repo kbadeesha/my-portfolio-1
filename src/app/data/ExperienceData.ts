@@ -1,5 +1,5 @@
 import { IExperience } from "../shared/interfaces/technologies.interface";
-import { TECHNOLOGIES, TechnologiesData } from "./TechnologiesData";
+import { TECHNOLOGIES } from "./TechnologiesData";
 import softcodeit_logo from "../../../public/assets/img/company_logos/softcodeit_solutions_pvt_ltd_logo.jpeg";
 import itx_logo from "../../../public/assets/img/company_logos/1641293756236.jpeg";
 
