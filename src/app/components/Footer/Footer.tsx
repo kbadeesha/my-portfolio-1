@@ -1,9 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
 import "../../../styles/components/footer.css";
-import logo from "../../../../public/assets/img/Logo.png";
-import navIcon1 from "../../../../public/assets/img/nav-icon1.svg";
-import navIcon2 from "../../../../public/assets/img/nav-icon2.svg";
-import navIcon3 from "../../../../public/assets/img/nav-icon7.svg";
 
 export const Footer = () => {
   return (
@@ -15,7 +11,12 @@ export const Footer = () => {
             sm={6}
             className="d-flex align-items-center justify-content-center footer-logo-container"
           >
-            <img src={logo.src} alt="Logo" className="footer-logo" />
+            {/* Reference image from public folder directly */}
+            <img
+              src="/assets/img/Logo.png" 
+              alt="Logo" 
+              className="footer-logo" 
+            />
           </Col>
           <p className="mt-0 mb-3">adeesha.kristhorubaduge@gmail.com</p>
           <Col
@@ -30,7 +31,7 @@ export const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src={navIcon1.src}
+                  src="/assets/img/nav-icon1.svg"
                   alt="LinkedIn"
                   className="footer-social-icon"
                 />
@@ -41,7 +42,7 @@ export const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src={navIcon2.src}
+                  src="/assets/img/nav-icon2.svg"
                   alt="Facebook"
                   className="footer-social-icon"
                 />
@@ -52,7 +53,7 @@ export const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src={navIcon3.src}
+                  src="/assets/img/nav-icon7.svg"
                   alt="GitHub"
                   className="footer-social-icon"
                 />
