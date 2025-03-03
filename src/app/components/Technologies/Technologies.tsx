@@ -3,6 +3,7 @@ import TrackVisibility from "react-on-screen";
 import { TechnologiesData } from "../../data/TechnologiesData";
 import "../../../styles/components/technologies.css";
 import DecryptedText from "../Shared/DecryptedText/DecryptedText";
+import Image from "next/image";
 const Technologies = () => {
   return (
     <section className="tech" id="tech">
@@ -43,10 +44,12 @@ const Technologies = () => {
                     {TechnologiesData.map((tech, index) => (
                       <div key={index} className="tech-item">
                         <a href={tech.url}>
-                          <img
+                          <Image
                             src={tech.logo.src}
                             alt={`${tech.name} logo`}
                             className="tech-logo"
+                            height={33}
+                            width={33}
                           />
                         </a>
                         <p>{tech.name}</p>
