@@ -20,13 +20,13 @@
 }
 
 :root {
-  --background: #34353A;
+  --background: #34353a;
   --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: ##34353A;
+    --background: ##34353a;
     --foreground: #ededed;
   }
 }
@@ -38,9 +38,7 @@ body {
   background-color: #121212;
   font-weight: 400;
   overflow-x: hidden;
-  position: relative; 
-
-
+  position: relative;
 }
 @media (min-width: 1700px) {
   main .container {
@@ -55,6 +53,7 @@ h3,
 h4,
 h5,
 h6 {
+  color: #fff;
   margin: 0;
   padding: 0;
   line-height: normal;
@@ -70,19 +69,19 @@ ul {
   line-height: normal;
   text-decoration: none;
 }
-.hero-container{
+.hero-container {
   padding-left: 4rem;
   padding-right: 4rem;
 }
 .bg-image {
-  position: fixed; 
-  top: 0; 
+  position: fixed;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: -1; /* Ensures the image stays behind content */
   /* background-image: url('path/to/bannerImage'); */
   background-repeat: no-repeat;
-  background-size: cover;  /* You can adjust size as needed */
+  background-size: cover; /* You can adjust size as needed */
   background-position: center center;
 }
