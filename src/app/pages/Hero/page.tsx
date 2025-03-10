@@ -5,7 +5,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import Image from "next/image"; // Import next/image
 import Experience from "@/app/components/Experience/Experience";
-import SplashCursor from "@/appcomponents/Shared/SplashCursor/SplashCursor";
+import SplashCursor from "@/app/components/SplashCursor/SplashCursor";
 // import { ImageData } from "@/app/data/ImagesData";
 
 const Hero = () => {
