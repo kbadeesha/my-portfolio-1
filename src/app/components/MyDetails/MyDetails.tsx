@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
 import Image from "next/image"; // Import the Image component
-import "../../../styles/components/my-details.css";
+import "./my-details.css";
 import { ImageData } from "@/app/data/ImagesData";
 
 const MyDetails = () => {

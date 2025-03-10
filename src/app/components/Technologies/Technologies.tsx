@@ -1,7 +1,7 @@
 import React from "react";
 import TrackVisibility from "react-on-screen";
 import { TechnologiesData } from "../../data/TechnologiesData";
-import "../../../styles/components/technologies.css";
+import "./technologies.css";
 import DecryptedText from "../Shared/DecryptedText/DecryptedText";
 import Image from "next/image";
 const Technologies = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import TrackVisibility from "react-on-screen";
-import "../../../styles/components/projects.css";
+import "./projects.css";
 const Projects = () => {
   return (
     <section className="proj" id="proj">

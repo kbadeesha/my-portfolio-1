@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import "../../../styles/components/navbar.css";
+import "./navbar.css";
 import { ImageData } from "@/app/data/ImagesData";
 
 const NavBar = () => {

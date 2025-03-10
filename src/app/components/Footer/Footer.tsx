@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image"; // Import Next.js Image component
-import "../../../styles/components/footer.css";
+import "./footer.css";
 import { ImageData } from "@/app/data/ImagesData";
 
 export const Footer = () => {

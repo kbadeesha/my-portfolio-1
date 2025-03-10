@@ -1,6 +1,6 @@
 import React from "react";
 import TrackVisibility from "react-on-screen";
-import "../../../styles/components/experience.css";
+import "./experience.css";
 import ExperienceCard from "./ExperienceCard/ExperienceCard";
 import DecryptedText from "../Shared/DecryptedText/DecryptedText";
 const Experience = () => {
