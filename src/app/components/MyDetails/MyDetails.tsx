@@ -22,7 +22,7 @@ const MyDetails = () => {
     return () => {
       clearInterval(ticker);
     };
-  }, [text, delta]);
+  }, [text, delta,]);
 
   const tick = () => {
     const i = loopNum % toRotate.length;
