@@ -34,7 +34,7 @@ export const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <Image
-                  src={"ImageData.LINKEDIN_ICON.img"}
+                  src={"https://i.postimg.cc/d0vRP6nP/nav-icon1.png"}
                   alt="LinkedIn"
                   width={24} // Set width for social icons
                   height={24} // Set height for social icons
@@ -47,7 +47,7 @@ export const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <Image
-                  src={"ImageData.FB_ICON.img"}
+                  src={"https://i.postimg.cc/N046gXPy/nav-icon2.png"}
                   alt="Facebook"
                   width={24}
                   height={24}
@@ -60,7 +60,7 @@ export const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <Image
-                  src={"ImageData.GIT_ICON.img"}
+                  src={"https://i.postimg.cc/76tSzk4w/nav-icon7.png"}
                   alt="GitHub"
                   width={24}
                   height={24}

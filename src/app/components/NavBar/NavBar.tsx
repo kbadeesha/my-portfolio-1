@@ -56,7 +56,7 @@ const NavBar = () => {
           aria-label="Visit Adeesha's LinkedIn Profile"
         >
           <Image
-            src={"ImageData.LINKEDIN_ICON.img"}
+            src={"https://i.postimg.cc/d0vRP6nP/nav-icon1.png"}
             alt="LinkedIn Icon"
             className="navbar-social-icon"
             height={33}
@@ -70,7 +70,7 @@ const NavBar = () => {
           aria-label="Visit Adeesha's Facebook Profile"
         >
           <Image
-            src={"ImageData.FB_ICON.img"}
+            src={"https://i.postimg.cc/N046gXPy/nav-icon2.png"}
             alt="Facebook Icon"
             className="navbar-social-icon"
             height={33}
@@ -84,7 +84,7 @@ const NavBar = () => {
           aria-label="Visit Adeesha's GitHub Profile"
         >
           <Image
-            src={"ImageData.GIT_ICON.img"}
+            src={"https://i.postimg.cc/76tSzk4w/nav-icon7.png"}
             alt="GitHub Icon"
             className="navbar-social-icon"
             height={33}
