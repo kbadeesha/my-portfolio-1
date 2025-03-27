@@ -9,7 +9,7 @@
 }
 
 .tech-bx {
-  background: #34353A;
+  background: #34353a;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
@@ -41,6 +41,7 @@
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 20px;
   padding: 20px;
+  align-items: stretch;
 }
 
 .tech-item {
@@ -100,7 +101,10 @@ p {
   }
 
   .tech-grid {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjust grid columns */
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(120px, 1fr)
+    ); /* Adjust grid columns */
     gap: 15px; /* Reduce gap between items */
     padding: 10px; /* Reduce padding inside the grid */
   }
@@ -141,7 +145,10 @@ p {
   }
 
   .tech-grid {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Even smaller columns */
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(100px, 1fr)
+    ); /* Even smaller columns */
     gap: 10px; /* Further reduce gap */
   }
 

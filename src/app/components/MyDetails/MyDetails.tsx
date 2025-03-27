@@ -52,7 +52,6 @@ const MyDetails = () => {
     <section className="my-details" id="home">
       <Container>
         <Row className="align-items-center top-row">
-        
           <Col xs={12} md={6} xl={7} className="col-text">
             <TrackVisibility>
               {({ isVisible }) => (
@@ -92,7 +91,7 @@ const MyDetails = () => {
                     }
                   >
                     <Image
-                      src={ImageData.HEADER.img}
+                      src="https://postimg.cc/jLVfkF7n"
                       alt="Header Img"
                       width={500}
                       height={500}

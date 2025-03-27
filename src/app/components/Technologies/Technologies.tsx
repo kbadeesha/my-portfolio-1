@@ -4,6 +4,7 @@ import { TechnologiesData } from "../../data/TechnologiesData";
 import "./technologies.css";
 import DecryptedText from "../Shared/DecryptedText/DecryptedText";
 import Image from "next/image";
+import { Col } from "react-bootstrap";
 const Technologies = () => {
   return (
     <section className="tech" id="tech">
@@ -36,7 +37,7 @@ const Technologies = () => {
               </p>
               <TrackVisibility partialVisibility>
                 {({ isVisible }) => (
-                  <div
+                  <Col
                     className={`tech-grid ${
                       isVisible ? "animate__animated animate__fadeInUp" : ""
                     }`}
@@ -55,7 +56,7 @@ const Technologies = () => {
                         <p>{tech.name}</p>
                       </div>
                     ))}
-                  </div>
+                  </Col>
                 )}
               </TrackVisibility>
             </div>

@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="relative py-8 hero-container">
         <div className="bg-image">
           <Image
-            src={ImageData.BACKGROUND.img}
+            src="https://postimg.cc/1gTXV80V"
             alt="Banner"
             layout="fill"
             objectFit="cover"
