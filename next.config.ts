@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
   distDir: "dist",
   images: {
     unoptimized: true,
-    domains: ["postimg.cc"],
+    domains: ["postimg.cc", "i.postimg.cc"],
   },
   /* config options here */
   assetPrefix: isProd ? "/my-portfolio-1" : "",
