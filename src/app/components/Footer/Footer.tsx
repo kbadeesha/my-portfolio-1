@@ -14,7 +14,7 @@ export const Footer = () => {
             className="d-flex align-items-center justify-content-center footer-logo-container"
           >
             <Image
-              src={"ImageData.NAVBAR_LOGO.img"} // Path relative to public folder
+              src={"https://i.postimg.cc/ZYVcTYm0/Logo2.png"} // Path relative to public folder
               alt="Logo"
               width={200} // Set a width for the logo
               height={100} // Set a height for the logo

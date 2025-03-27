@@ -34,7 +34,7 @@ const NavBar = () => {
           aria-label="Visit Adeesha's LinkedIn Profile"
         >
           <Image
-            src={"ImageData.NAVBAR_LOGO.img"}
+            src={"https://i.postimg.cc/ZYVcTYm0/Logo2.png"}
             alt="Logo"
             className="navbar-logo"
             height={33}

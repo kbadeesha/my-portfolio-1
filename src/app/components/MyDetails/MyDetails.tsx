@@ -90,7 +90,7 @@ const MyDetails = () => {
                     }
                   >
                     <Image
-                      src="https://postimg.cc/jLVfkF7n"
+                      src="https://i.postimg.cc/xT8Pqrj5/Header1.png"
                       alt="Header Img"
                       width={500}
                       height={500}
