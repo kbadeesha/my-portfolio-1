@@ -37,3 +37,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 Image hosting : https://postimg.cc
 with work mail
+
+scripts 
+npm run build 
