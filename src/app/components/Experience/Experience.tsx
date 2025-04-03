@@ -25,7 +25,7 @@ const Experience = () => {
               </h2>
               <p>
                 Over the years, I have worked on a variety of projects that have
-                honed my skills as a software engineer and web developer. From
+                shaped my skills as a software engineer and web developer. From
                 designing intuitive user interfaces to architecting scalable
                 backend systems, each experience has contributed to my growth
                 and expertise. I have collaborated with teams, tackled complex
