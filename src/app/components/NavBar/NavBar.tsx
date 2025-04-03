@@ -1,24 +1,21 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import "./navbar.css";
-
+import { throttle } from "lodash";
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    // Event listener to track scroll position
-    const handleScroll = () => {
+    const handleScroll = throttle(() => {
       if (window.scrollY > 50) {
-        // Adjust scroll positiond threshold as needed
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
       }
-    };
+    }, 200); // 200ms throttle
 
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup the event listener
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };

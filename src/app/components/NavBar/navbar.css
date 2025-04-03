@@ -1,5 +1,6 @@
 .navbar {
   transition: background-color 4s ease;
+  transition: all 0.3s ease-in-out;
   position: sticky;
   top: 0;
   background-color: #34353a;
