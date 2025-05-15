@@ -25,11 +25,12 @@ const Technologies = () => {
                 />
               </h2>
               <p>
-                Throughout my journey as a developer, I have gained expertise in
-                a diverse set of technologies that empower me to build scalable,
-                high-performance applications. From the front-end to the
-                back-end, I leverage modern tools and frameworks to craft
-                seamless user experiences and robust infrastructures.
+                Throughout my journey as a developer, I have always gained
+                expertise in a diverse set of technologies that empower me to
+                build scalable, high-performance applications. From the
+                front-end to the back-end, I leverage modern tools and
+                frameworks to craft seamless user experiences and robust
+                infrastructures.
                 <br />
                 <br /> Below is a selection of the key technologies I’ve worked
                 with to bring projects to life.
