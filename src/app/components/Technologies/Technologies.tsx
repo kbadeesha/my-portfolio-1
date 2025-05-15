@@ -1,10 +1,9 @@
-import React from "react";
-import TrackVisibility from "react-on-screen";
-import { TechnologiesData } from "../../data/TechnologiesData";
-import "./technologies.css";
-import DecryptedText from "../Shared/DecryptedText/DecryptedText";
 import Image from "next/image";
 import { Col } from "react-bootstrap";
+import TrackVisibility from "react-on-screen";
+import { TechnologiesData } from "../../data/TechnologiesData";
+import DecryptedText from "../Shared/DecryptedText/DecryptedText";
+import "./technologies.css";
 const Technologies = () => {
   return (
     <section className="tech" id="tech">
