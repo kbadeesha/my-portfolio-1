@@ -14,8 +14,21 @@
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
-}
 
+  animation: appear 5s linear;
+  animation-timeline:view() ;
+  animation-range: entry 0% cover 40%;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+    scale: 0.4;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
 .tech h2 {
   font-size: 45px;
   font-weight: 700;
