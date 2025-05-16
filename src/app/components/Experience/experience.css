@@ -120,7 +120,23 @@
   margin-top: 5px;
   display: flex;
   gap: 10px;
+
+  animation: animate 4s forwards;
+  animation-timeline:view() ;
+  animation-range: entry 0% cover 40%;
+  opacity: 0;
+  transform: translate(-150px) scale(3);
 }
+@keyframes animate {
+  60% {
+    transform: translateY(20px,20px) rotate(30deg) scale(0.3);
+  }
+  100% {
+      transform: translateY(0) rotate(0) scale(1);
+      opacity: 1;
+  }
+}
+
 
 .tech-item .tech-item-logo {
   height: 40px;
