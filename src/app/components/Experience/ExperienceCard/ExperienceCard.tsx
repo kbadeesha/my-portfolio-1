@@ -73,7 +73,7 @@ const ExperienceCard = () => {
                     <div className="project-points">
                       {project.project_points.map((point, point_idx) => {
                         return (
-                          <div key={point_idx} className="point-item">
+                          <div key={point_idx} className="point-item" style={{ animationDelay: `${point_idx * 400}ms` }}>
                             <ul>
                               <li key={point.id}>{point.point}</li>
                             </ul>

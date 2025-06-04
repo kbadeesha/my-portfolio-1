@@ -152,6 +152,19 @@
 .project-points {
   padding: 20px;
 }
+ .point-item {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideUp 4.5s ease forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 60%;
+  }
+  @keyframes fadeSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 .project-points .point-item {
   padding-bottom: 0px;
@@ -220,11 +233,14 @@ ul {
 
   .project-points {
     padding: 15px;
+    flex-direction: column;
+    gap: 12px;
   }
 
   .project-points .point-item {
     font-size: 16px; /* Smaller font size */
   }
+ 
   .exp-comp-image {
     align-self: center;
   }
