@@ -52,10 +52,10 @@
 
 .tech-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
-  padding: 20px;
-  align-items: stretch;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+  gap: 16px;
+  justify-items: center; 
+  align-items: center;   
 }
 @keyframes fadeUp  {
   to {
