@@ -146,7 +146,7 @@
   opacity: 0;
   animation: fadeUp 5s ease-out forwards;
   animation-timeline: view();
-  animation-range: entry 0% cover 60%;
+  animation-range: entry 0% cover 40%;
 }
 
 .project-points {

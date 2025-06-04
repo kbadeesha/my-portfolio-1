@@ -37,12 +37,10 @@ const Technologies = () => {
               <TrackVisibility partialVisibility>
                 {({ isVisible }) => (
                   <Col
-                    className={`tech-grid ${
-                      isVisible ? "animate__animated animate__fadeInUp" : ""
-                    }`}
+                    className={`tech-grid`}
                   >
                     {TechnologiesData.map((tech, index) => (
-                      <div key={index} className="tech-item">
+                      <div key={index} className="tech-item" style={{ animationDelay: `${index * 450}ms` }}>
                         <a href={tech.url}>
                           <Image
                             src={tech.logo.src}
