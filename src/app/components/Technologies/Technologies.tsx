@@ -35,7 +35,7 @@ const Technologies = () => {
                 with to bring projects to life.
               </p>
               <TrackVisibility partialVisibility>
-                {({ isVisible }) => (
+                {() => (
                   <Col
                     className={`tech-grid`}
                   >
