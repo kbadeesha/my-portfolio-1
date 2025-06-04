@@ -18,6 +18,16 @@
   src: url("../../public/assets/font/CentraNo2-Book.ttf");
   font-weight: 400;
 }
+@font-face {
+  font-family: Newretro;
+  src: url("../../public/assets/font/Newretro.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url("../../public/assets/font/ProximaNovaSemibold.otf");
+  font-weight: 400;
+}
 
 :root {
   --background: #34353a;
@@ -34,7 +44,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: "Centra", sans-serif !important;
+  font-family: "ProximaNova", sans-serif !important;
   background-color: #121212;
   font-weight: 400;
   overflow-x: hidden;
