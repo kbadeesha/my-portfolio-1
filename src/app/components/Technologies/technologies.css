@@ -9,7 +9,8 @@
 }
 
 .tech-bx {
-  background: #34353a;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 30px rgba(255, 0, 155, 0.2);
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;

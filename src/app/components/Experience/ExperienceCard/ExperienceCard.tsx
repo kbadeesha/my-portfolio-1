@@ -1,6 +1,5 @@
 import { EXPERIENCE_DATA } from "@/app/data/ExperienceData";
 import { IExperience } from "@/app/shared/interfaces/technologies.interface";
-import React from "react";
 import Image from "next/image";
 import { Tooltip } from "react-bootstrap";
 
@@ -54,7 +53,7 @@ const ExperienceCard = () => {
                     <div className="proj-technologies">
                       {project.project_technologies.map((tech, tech_idx) => {
                         return (
-                          <div key={tech_idx} className="tech-item">
+                          <div key={tech_idx} className="tech-item" style={{ animationDelay: `${tech_idx * 400}ms` }}>
                             <a target="_blank" href={tech.url}>
                               <Tooltip title={tech.name}>
                                 <Image
